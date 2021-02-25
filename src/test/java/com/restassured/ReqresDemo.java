@@ -16,8 +16,7 @@ import java.util.Properties;
 import static com.oracle.jrockit.jfr.Transition.To;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 
 public class ReqresDemo {
 
@@ -37,7 +36,8 @@ public class ReqresDemo {
         //Response response = given().when().get("https://reqres.in/api/users?page=2");
         Response response = given().when().get(prop.getProperty("HOST"));
         response.prettyPrint();
-        response.then().assertThat().statusCode(200).and().contentType(ContentType.JSON).body("page",is(2),"data[0].id",is(4));
+        response.then().assertThat().body("data.id",hasItems(7,8));
+        //response.then().assertThat().statusCode(200).and().contentType(ContentType.JSON).body("page",is(2),"data[0].id",is(4));
     }
     @Test
     public void post1(){
@@ -58,6 +58,38 @@ public class ReqresDemo {
         response.prettyPrint();
         response.then().assertThat().body("token",is("QpwL5tke4Pnpja7X4"));
     }
+    @Test
+    public void get5() throws IOException {
+        FileInputStream isr = new FileInputStream("C:\\Users\\ketan\\Restdemo\\src\\test\\Resources\\env.properties");
+        prop.load(isr);
+        Response response = given().when().get(prop.getProperty("HOST"));
+        response.prettyPrint();
+        response.then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().body("data.id",hasItems(1,2,3)).
+                and().
+                body("page",is(1)).and().body("data.name",hasItem("aqua sky"));
+
+    }
+    @Test
+    public void postdata() throws IOException {
+        Response response = given().contentType(ContentType.JSON).when().body(Payload.postData()).post("https://reqres.in/api/users");
+        response.prettyPrint();
+        response.then().assertThat().statusCode(201).and().contentType(ContentType.JSON).and().
+                body("name",is("morpheus")).and().body("job",is("leader"));
+    }
+    @Test
+    public void putdata(){
+        Response response = given().contentType(ContentType.JSON).when().body(Payload.putData()).put("https://reqres.in/api/users2");
+        response.prettyPrint();
+        response.then().assertThat().body("name",is("morpheus"));
+    }
+    @Test
+    public void deletedata(){
+        Response response = given().when().delete("https://reqres.in/api/users2");
+        response.prettyPrint();
+        response.then().assertThat().statusCode(204);
+    }
+
+
 
 
 }
