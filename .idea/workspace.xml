@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager" selected="JUnit.GoogleApi.getDemo">
+    <configuration name="GoogleApi.getDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restassured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restassured" />
+      <option name="MAIN_CLASS_NAME" value="com.restassured.GoogleApi" />
+      <option name="METHOD_NAME" value="getDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleApi.postDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restassured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restassured" />
+      <option name="MAIN_CLASS_NAME" value="com.restassured.GoogleApi" />
+      <option name="METHOD_NAME" value="postDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleApi.putDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restassured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restassured" />
+      <option name="MAIN_CLASS_NAME" value="com.restassured.GoogleApi" />
+      <option name="METHOD_NAME" value="putDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReqresDemo.post1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restassured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restassured" />
+      <option name="MAIN_CLASS_NAME" value="com.restassured.ReqresDemo" />
+      <option name="METHOD_NAME" value="post1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reqres_in_1.getDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.restassured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.restassured" />
+      <option name="MAIN_CLASS_NAME" value="com.restassured.Reqres_in_1" />
+      <option name="METHOD_NAME" value="getDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GoogleApi.getDemo" />
+        <item itemvalue="JUnit.Reqres_in_1.getDemo" />
+        <item itemvalue="JUnit.GoogleApi.putDemo" />
+        <item itemvalue="JUnit.GoogleApi.postDemo" />
+        <item itemvalue="JUnit.ReqresDemo.post1" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
