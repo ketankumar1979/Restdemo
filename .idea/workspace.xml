@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+
   <component name="ChangeListManager">
     <list default="true" id="c6937f58-d7f6-4424-a90c-c32e146e4a61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/extraResource/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/extraResource/Payload.java" afterDir="false" />
@@ -231,6 +232,7 @@
       </list>
     </option>
   </component>
+
   <component name="RunManager" selected="JUnit.GoogleApi.getDemo">
     <configuration name="GoogleApi.getDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restdemo" />
@@ -322,6 +324,7 @@
       </list>
     </recent_temporary>
   </component>
+
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -565,4 +568,5 @@
       </provider>
     </entry>
   </component>
+
 </project>
