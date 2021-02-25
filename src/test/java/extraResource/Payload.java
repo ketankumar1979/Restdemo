@@ -1,14 +1,15 @@
 package extraResource;
 
 public class Payload {
-    public static String getData(){
+    public static String getData() {
         String s = "{\\n\" +\n" +
                 "                \"    \\\"name\\\": \\\"morpheus\\\",\\n\" +\n" +
                 "                \"    \\\"job\\\": \\\"leader\\\"\\n\" +\n" +
                 "                \"}";
         return s;
     }
-    public static String postData(){
+
+    public static String postData() {
         String s = "{\n" +
                 "    \"name\": \"morpheus\",\n" +
                 "    \"job\": \"leader\"\n" +
@@ -16,14 +17,16 @@ public class Payload {
         return s;
 
     }
-    public static String putData(){
+
+    public static String putData() {
         String s = "{\n" +
                 "    \"name\": \"morpheus\",\n" +
                 "    \"job\": \"zion resident\"\n" +
                 "}";
         return s;
     }
-    public static String googleApipost(){
+
+    public static String googleApipost() {
         String s = "{\n" +
                 "  \"location\": {\n" +
                 "    \"lat\": -38.383494,\n" +
@@ -43,7 +46,7 @@ public class Payload {
         return s;
 
     }
-
+}
 
 //ketan
     
